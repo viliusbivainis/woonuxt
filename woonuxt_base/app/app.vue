@@ -45,7 +45,9 @@ useHead({
   </div>
 </template>
 
-<style lang="postcss">
+<style>
+@import "tailwindcss";
+@import "@nuxt/ui";
 html,
 body {
   scroll-behavior: smooth;

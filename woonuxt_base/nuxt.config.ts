@@ -1,6 +1,7 @@
 import { createResolver } from '@nuxt/kit';
 const { resolve } = createResolver(import.meta.url);
 
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-09',
   future: {
@@ -30,7 +31,7 @@ export default defineNuxtConfig({
 
   components: [{ path: resolve('./app/components'), pathPrefix: false }],
 
-  modules: ['woonuxt-settings', 'nuxt-graphql-client', '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['woonuxt-settings', 'nuxt-graphql-client', '@nuxtjs/i18n', '@nuxt/ui'],
 
   'graphql-client': {
     clients: {
@@ -78,4 +79,5 @@ export default defineNuxtConfig({
     defaultLocale: 'lt_LT',
     strategy: 'no_prefix',
   },
+
 });

@@ -8,6 +8,16 @@ const productCategories = data.value?.productCategories?.nodes || [];
 const { data: productData } = await useAsyncGql('getProducts', { first: 5, orderby: ProductsOrderByEnum.POPULARITY });
 const popularProducts = productData.value.products?.nodes || [];
 
+const toast = useToast()
+
+const props = defineProps<{
+  title: string
+}>()
+
+function showToast() {
+  toast.add(props)
+}
+
 useSeoMeta({
   title: `Home`,
   ogTitle: siteName,
@@ -21,7 +31,7 @@ useSeoMeta({
 <template>
   <main>
     <HeroBanner />
-
+    <UButton label="Show toast" color="neutral" variant="outline" @click="showToast" />
     <div class="container flex flex-wrap items-center justify-center my-16 text-center gap-x-8 gap-y-4 brand lg:justify-between">
       <img src="/images/logoipsum-211.svg" alt="Brand 1" width="132" height="35" />
       <img src="/images/logoipsum-221.svg" alt="Brand 2" width="119" height="30" />

@@ -175,7 +175,9 @@ useSeoMeta({
   </div>
 </template>
 
-<style lang="postcss">
+<style>
+@import "tailwindcss";
+
 .checkout-form input[type='text'],
 .checkout-form input[type='email'],
 .checkout-form input[type='tel'],
