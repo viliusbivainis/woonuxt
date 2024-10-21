@@ -14,13 +14,20 @@ const { wishlistLink } = useAuth();
 
 <style scoped>
 .main-nav {
-  font-family: "FixelText-SemiBold", sans-serif;
+  a{
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   line-height:24px;
-  font-weight:600;
+  font-weight:500;
   color:#212121;
-  vertical-align: baseline;
-  outline: 0;
-  background-color: transparent;
+  font-style: normal;
+  letter-spacing: .04em;
+  border-bottom: 1px solid transparent;
+  transition: all .2s ease-in-out;
+  padding: 3px 0;
+  &:hover{
+    border-bottom: 1px solid #212121;
+  }
+  }
 }
 </style>
