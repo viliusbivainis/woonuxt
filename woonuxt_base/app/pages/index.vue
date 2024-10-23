@@ -8,6 +8,15 @@ const productCategories = data.value?.productCategories?.nodes || [];
 const { data: productData } = await useAsyncGql('getProducts', { first: 5, orderby: ProductsOrderByEnum.POPULARITY });
 const popularProducts = productData.value.products?.nodes || [];
 
+const items = [
+  'https://picsum.photos/600/800?random=1',
+  'https://picsum.photos/600/800?random=2',
+  'https://picsum.photos/600/800?random=3',
+  'https://picsum.photos/600/800?random=4',
+  'https://picsum.photos/600/800?random=5',
+  'https://picsum.photos/600/800?random=6'
+]
+
 useSeoMeta({
   title: `Home`,
   ogTitle: siteName,
@@ -21,6 +30,12 @@ useSeoMeta({
 <template>
   <main>
     <HeroBanner />
+
+<!-- 
+  <UCarousel v-slot="{ item }" :items="items" arrows>
+    <img :src="item" width="300" height="400" draggable="false">
+  </UCarousel> -->
+
 
     <div class="container flex flex-wrap items-center justify-center my-16 text-center gap-x-8 gap-y-4 brand lg:justify-between">
       <img src="/images/logoipsum-211.svg" alt="Brand 1" width="132" height="35" />

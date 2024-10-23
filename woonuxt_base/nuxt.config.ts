@@ -9,10 +9,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'lt' },
       link: [{ rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     },
     pageTransition: { name: 'page', mode: 'default' },
+  },
+
+  colorMode: {
+    preference: 'light'
   },
 
   experimental: {
@@ -30,7 +34,7 @@ export default defineNuxtConfig({
 
   components: [{ path: resolve('./app/components'), pathPrefix: false }],
 
-  modules: ['woonuxt-settings', 'nuxt-graphql-client', '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['woonuxt-settings', 'nuxt-graphql-client', '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n', '@nuxt/ui'],
 
   'graphql-client': {
     clients: {

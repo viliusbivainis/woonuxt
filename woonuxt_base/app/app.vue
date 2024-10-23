@@ -49,7 +49,9 @@ useHead({
 html,
 body {
   scroll-behavior: smooth;
+  font-family: "Hanken Grotesk", sans-serif;
 }
+
 
 img {
   image-rendering: crisp-edges;
