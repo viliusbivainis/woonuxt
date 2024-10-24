@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const items = [
-  'https://firstsight.design/levre/mono/wp-content/uploads/2023/03/Hero@2x-1-scaled-1.jpg',
-  'https://picsum.photos/1920/1080?random=2',
+  '/images/banner_1.jpg',
 ]
 const carouselRef = ref()
 
@@ -33,7 +32,7 @@ onMounted(() => {
       indicators
       arrows>
     <template #default="{ item }">
-      <div class="carousel-item w-100 relative">
+      <div class="carousel-item w-full md:h-4/6 relative">
         <NuxtImg
           width="1400"
           height="800"

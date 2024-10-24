@@ -7,12 +7,12 @@ const { wishlistLink } = useAuth();
     <NuxtLink to="/products">{{ $t('messages.general.allProducts') }}</NuxtLink>
     <NuxtLink to="/categories">{{ $t('messages.shop.category', 2) }}</NuxtLink>
     <NuxtLink to="/contact">{{ $t('messages.general.contact') }}</NuxtLink>
-    <NuxtLink class="lg:hidden" :to="wishlistLink" :prefetch="false">Wishlist</NuxtLink>
-    <NuxtLink class="lg:hidden" to="/my-account" :prefetch="false">My Account</NuxtLink>
+    <NuxtLink class="lg:hidden" :to="wishlistLink" :prefetch="false">Norų sąrašas</NuxtLink>
+    <NuxtLink class="lg:hidden" to="/my-account" :prefetch="false">Mano Paskyra</NuxtLink>
   </nav>
 </template>
 
-<style scoped>
+<style>
 .main-nav {
   a{
   font-family: "Hanken Grotesk", sans-serif;
@@ -25,9 +25,9 @@ const { wishlistLink } = useAuth();
   border-bottom: 1px solid transparent;
   transition: all .2s ease-in-out;
   padding: 3px 0;
-  &:hover{
-    border-bottom: 1px solid #212121;
-  }
+    &:hover{
+      border-bottom: 1px solid #212121;
+    }
   }
 }
 </style>
