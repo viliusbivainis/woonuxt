@@ -18,7 +18,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-100">
+  <div class="w-100 md:h-4/6">
   <div class="full-width-carousel">
     <UCarousel ref="carouselRef" 
       :items="items" 
