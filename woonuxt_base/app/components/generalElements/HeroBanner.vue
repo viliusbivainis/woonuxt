@@ -18,8 +18,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-100 md:h-4/6">
-  <div class="full-width-carousel">
+  <div class="w-100">
+  <div class="full-width-carousel h-[420px] lg:h-[560px] xl:h-[640px]">
     <UCarousel ref="carouselRef" 
       :items="items" 
       :ui="{ 
@@ -32,7 +32,7 @@ onMounted(() => {
       indicators
       arrows>
     <template #default="{ item }">
-      <div class="carousel-item w-full md:h-4/6 relative">
+      <div class="carousel-item w-full relative">
         <NuxtImg
           width="1400"
           height="800"
