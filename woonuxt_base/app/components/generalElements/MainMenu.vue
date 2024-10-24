@@ -6,7 +6,7 @@ const { wishlistLink } = useAuth();
   <nav class="main-nav">
     <NuxtLink to="/products">{{ $t('messages.general.allProducts') }}</NuxtLink>
     <NuxtLink to="/categories">{{ $t('messages.shop.category', 2) }}</NuxtLink>
-    <NuxtLink to="/contact">{{ $t('messages.general.contact') }}</NuxtLink>
+    <NuxtLink to="/susisiekite">{{ $t('messages.general.contact') }}</NuxtLink>
     <NuxtLink class="lg:hidden" :to="wishlistLink" :prefetch="false">Norų sąrašas</NuxtLink>
     <NuxtLink class="lg:hidden" to="/my-account" :prefetch="false">Mano Paskyra</NuxtLink>
   </nav>
