@@ -20,6 +20,10 @@ watch(
 
 useHead({
   titleTemplate: `%s - ${siteName}`,
+  meta: [{
+        name: 'verify-paysera',
+        content: 'ffe906392568886c6d3a6d2a97d8ca3a'
+      }],
 });
 </script>
 
