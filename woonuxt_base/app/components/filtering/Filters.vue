@@ -39,7 +39,9 @@ const attributesWithTerms = globalProductAttributes.map((attr) => ({ ...attr, te
   <div class="fixed inset-0 z-50 hidden bg-black opacity-25 filter-overlay" @click="removeBodyClass('show-filters')"></div>
 </template>
 
-<style lang="postcss">
+<style>
+
+
 .show-filters .filter-overlay {
   @apply block;
 }
@@ -113,7 +115,7 @@ const attributesWithTerms = globalProductAttributes.map((attr) => ({ ...attr, te
 
   input[type='checkbox']:checked + label,
   input[type='radio']:checked + label {
-    @apply text-gray-800 hover:text-primary-dark;
+    @apply text-gray-800;
   }
 
   input[type='checkbox']:checked,
